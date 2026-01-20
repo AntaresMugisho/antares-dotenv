@@ -90,7 +90,6 @@ debug = env("DEBUG")
 hosts = env("ALLOWED_HOSTS")
 ```
 
-`antares-dotenv` automatically handles the type casting for you, making your code cleaner and more readable.
+`antares-dotenv` automatically handles the type casting for you, eliminating the need for manual type conversion and making your code cleaner, more readable, and less verbose.
 
-
-*-- For personnal purposes*
+**_PS: This package is tailored to my specific needs !_**

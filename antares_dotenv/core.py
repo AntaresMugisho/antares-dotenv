@@ -1,9 +1,9 @@
 import os
 import json
 from typing import Any
+
 from dotenv import load_dotenv
 
-load_dotenv()
 
 def _parse_value(value: str) -> Any:
     value = value.strip()
@@ -39,6 +39,8 @@ def _parse_value(value: str) -> Any:
 
 
 def env(key: str, default: Any = None) -> Any:
+    load_dotenv()
+
     value = os.getenv(key)
     if value is None:
         return default
