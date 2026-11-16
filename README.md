@@ -1,6 +1,6 @@
 # antares-dotenv
 
-A minimalistic and developer-friendly way to handle environment variables in Python. Create an `Env` and start using it. No more boilerplate code for loading and parsing.
+A minimalistic and developer-friendly way to handle environment variables in Python with automatic type casting. Create an `Env` instance and start using it.
 
 ## Installation
 
@@ -150,8 +150,5 @@ hosts = env("ALLOWED_HOSTS")
 >
 > env = Env()
 > ```
-
-> [!Note]
-> `antares-dotenv` has no dependencies: it ships its own `.env` parser.
 
 **_PS: This package is tailored to my specific needs !_**

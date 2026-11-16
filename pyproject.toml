@@ -1,18 +1,23 @@
-[tool.poetry]
+[project]
 name = "antares-dotenv"
 version = "1.2.0"
 description = "A minimal utility to load environment variables with automatic type casting."
-authors = ["Antares Mugisho <antaresmugisho@gmail.com>"]
+authors = [{ name = "Antares Mugisho", email = "antaresmugisho@gmail.com" }]
 license = "MIT"
+license-files = ["LICENSE"]
 readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
 
-[tool.poetry.dependencies]
-python = "^3.11"
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^7.4.0"
-pytest-cov = "^4.1.0"
+[dependency-groups]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-root = ""
